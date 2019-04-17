@@ -1,0 +1,6 @@
+<h2>All Accounts</h2>
+<ul class="accounts">
+  <li *ngFor="let account of accounts" (click)="onSelect(account)">
+    <span class="badge">{{account.id}}</span> {{account.name}}
+  </li>
+</ul>
